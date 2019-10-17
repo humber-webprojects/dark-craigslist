@@ -17,53 +17,53 @@ a{
     text-decoration: none;
 }
 
+li:hover{
+    border-left-color: #323232;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+h3{
+    color: #666;
+    text-decoration: none;
+    font-size: 1.17em;
+    margin-bottom: .5em;
+}
+
+hr {
+    display: block;
+    border-top: 1px solid #ccc;
+}
+
 /* HEADER */
 .head-page{
     grid-area: topb;
     background-color: black;
-    /* box-shadow:  0 1rem 1rem 1rem rgba(0,0,0,0.4); */
-
 }
 
 .nav-bar{
-    /* grid-template-columns: minmax(2rem, 6rem) 1fr 1fr; */
-    /* grid-template-areas: "logo apps plys"
-                          "logo logn lang"; */
-    /* flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    align-content: flex-end; */
     display: flex;
-    /* flex-wrap: wrap; */
     justify-content: space-between;
-    /* align-items: center;
-    align-content: flex-start; */
-   
-    
+    margin-right: 3rem;
+    padding-top: 1rem;
+    align-items: flex-end;
+    align-content:flex-end;
+ 
 }
 
 .craigs-logo{
-
     width: 150px;
     max-width: auto;
     padding: 1rem;
-
-
 }
 
-.top-right{
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 3rem;
-}
-
-
-.apps{
+.apps-img{
     width: 50%;
     height: 50%;
 }
-
-
 
 .btn{
     display: block;
@@ -79,52 +79,29 @@ a{
     background-color: 333333;
 }
 
-
-
 /* SIDE BAR */
 .side-bar{
     grid-area: navi;
     background-color: #333333;
     max-width: 9rem;
-    
 }
-
-/* .side-bar::-webkit-scrollbar {
-    width: 1em;
-}
-.side-bar::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-}
-.side-bar::-webkit-scrollbar-thumb {
-    background-color: darkgrey;
-    outline: 1px solid slategrey;
-  } */
 
 .list-menu{
-    /* background-color: aqua; */
-    /* box-shadow:  0 1rem 1rem 1rem rgba(0,0,0,0.4); */
     background-color: black;
     padding: 3rem 0;
     border-bottom-right-radius: 1rem;
-    
 }
 
 .menu-item{
     display: grid;
-
     padding: 0 1rem;
     margin: 1rem 0;
     grid-template-columns: minmax(3rem, 6rem) auto;
     border-left: solid 8px transparent;
-
 }
 
 .left-menu-btn:hover{
     opacity:0.25 ;
-}
-
-li:hover{
-    border-left-color: #323232;
 }
 
 /* .img-menu{
@@ -134,27 +111,24 @@ li:hover{
     background-color: cornsilk;
 } */
 
-
 /* MAIN SECTION */
 .mid-search{
-    /* background-color: tomato; */
     text-align: center;
-    padding: 1rem 1rem;
-
-    
+    padding: 1rem 1rem; 
 }
+
+/* .search-where{
+    background-image: url('img/search.svg');
+    background-repeat: no-repeat;
+    position: relative;
+    padding-right: 2em;
+ 
+
+} */
 
 .main{
     grid-area: main;
     background-color: #333333;
-    /* display: grid; */
-    /* grid-template-rows: 1fr auto; */
-    /* grid-template-columns: 1fr 1fr 1fr; */
-}
-
-img{
-    width: 100%;
-    height: auto;
 }
 
 .deck-card-list{
@@ -163,8 +137,6 @@ img{
     justify-content: space-evenly;
     align-items: center;
     align-content: flex-start;
-    /* margin: 1rem 0; */
-
 }
 
 .card{
@@ -175,7 +147,6 @@ img{
     padding: 1rem 0;
     margin: 1rem 0;
     box-shadow:  1rem 0 1rem 1rem rgba(0,0,0,0.4);
-    /* background-color: red; */
 }
 
 .card-content{
@@ -183,20 +154,6 @@ img{
     padding-bottom: 0;
     margin-bottom: 0;
     text-align: center;
-    /* background-color: yellow; */
-}
-
-h3{
-    color: #666;
-    text-decoration: none;
-    font-size: 1.17em;
-    margin-bottom: .5em;
-}
-
-
-hr {
-    display: block;
-    border-top: 1px solid #ccc;
 }
 
 .read-more{
@@ -212,13 +169,8 @@ hr {
 }
 
 .zoom {
-    /* padding: 50px; */
-    /* background-color: green; */
     transition: transform .2s; /* Animation */
-    /* width: auto;
-    height: auto; */
-    /* margin: 0 auto; */
-  }
+}
 
 .zoom:hover {
     transform: scale(1.15); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
@@ -247,17 +199,15 @@ hr {
 }
 
 /* ADV SECTION */
-.advertisement{
+/* .advertisement{
     grid-area: adve;
     background-color: limegreen;
-
-}
+} */
 
 /* FOOTER */
 .foot-page{
     grid-area: bott;
     background-color: black;
-
 }
 .social-media-list{
     display: flex;
@@ -273,62 +223,21 @@ hr {
     grid-template-columns: 1fr 1fr 1fr;  
     margin: 1rem 0;
     text-align: center;
-
 }
-
-
 
 /* MEDIA QUERIES */
-@media screen and (min-width:320px){
-    /* .item-details{
-        grid-template-rows: repeat(4, 2fr);
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas: "item item item"
-                             "item item item"
-                             "item item item"
-                             "item item item";
-    }*/
-
-    /* .item-details{
-        background-color: yellow;
-        grid-template-columns: 1fr 1fr 1fr;
-    } */
-
-    /* .social-media{
-        grid-column: 1fr 1fr 1fr 1fr;
-    } */
-}
-
 @media screen and (min-width:700px){
-    /* .deck-card{
-
-        background-color: grey;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr repeat(1, minmax(auto, 25em)) 1fr;
-
-    } */
-    /* .deck-card-list{
-        grid-column: 2/3;
-        
-    } */
-
     .card{
         flex: 45%;
         max-width: 45%
     }
-    
 }
 
 @media screen and (min-width:800px){
-    /* .top-right{
-        justify-content: flex-end;
-    } */
-
     .card{
         flex: 45%;
         max-width: 45%
     }
-
 }
 
 @media screen and (min-width:1024px){
@@ -336,5 +245,4 @@ hr {
         flex: 18%;
         max-width: 18%
     }
-
 }

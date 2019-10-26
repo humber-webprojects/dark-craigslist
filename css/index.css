@@ -42,6 +42,8 @@ hr {
 .head-page{
     grid-area: topb;
     background-color: black;
+
+
 }
 
 .nav-bar{
@@ -51,6 +53,8 @@ hr {
     padding-top: 1rem;
     align-items: flex-end;
     align-content:flex-end;
+    
+    
  
 }
 
@@ -76,20 +80,29 @@ hr {
     margin: 1rem auto;
     text-decoration: none;
     padding: .5rem 1rem;
-    background-color: 333333;
+    background-color: #333333;
 }
 
 /* SIDE BAR */
 .side-bar{
     grid-area: navi;
     background-color: #333333;
-    max-width: 9rem;
+    /* max-width: 20rem; */
 }
 
 .list-menu{
     background-color: black;
-    padding: 3rem 0;
     border-bottom-right-radius: 1rem;
+    position: sticky;
+    top:0;
+    left: 0;
+    width: 6rem;
+    box-shadow:  1rem 0 1rem 1rem rgba(0,0,0,0.4);
+
+    float:left;
+    overflow-y: auto;
+    height: 375px;
+
 }
 
 .menu-item{
